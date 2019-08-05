@@ -100,8 +100,6 @@ textarea {
 /*-------------------------
 Basic Setup
 -------------------------*/
-
-
 * {
     margin: 0;
     padding: 0;
@@ -110,7 +108,7 @@ Basic Setup
 
 html,
 body{
-    background-color: #ffffff;
+    background-color: #fff;
     color: #494949;
     font-family: 'Poppins', serif;
     font-weight: 300;
@@ -119,83 +117,59 @@ body{
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
-/*-------------------------
-Reusable Parts
--------------------------*/
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-section{
-    padding: 70px 0;
-
-}
-
-.box{
-    padding: 1%;
-}
 /*-------------------------
 Headings
 -------------------------*/
 h1,
 h2,
 h3{
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Lora', serif;
 
 }
 
 h1{
-    font-size: 240%;
+    font-size: 2em;
     margin: 25px 20px 40px 20px;
 
 }
 
 h2{
-    font-size: 190%;
+    font-size: 1.85em;
     padding: 45px 10px;
 }
 
 h3{
-    font-size: 145%;
-    padding: 0 0 4% 0;
+    font-size: 1.5em;
+    line-height: 30px;
 }
 
 h4{
     font-weight: 300;
-    font-size: 190%;
+    font-size: 1.25em;
     font-family: 'Lora', serif;
 }
 
 h5{
     font-weight: 300;
-    font-size: 150%;
+    font-size: 1.15em;
     font-family: 'Lora', serif;
 }
+
+
 /*-------------------------
 Paragraphs
 -------------------------*/
 p{
-    font-size: 100%;
+    font-size: .85em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 
-
 /*-------------------------
 Icons
 -------------------------*/
+
 i {
     font-size: 200%;
     color: #1E1E20;
@@ -215,167 +189,194 @@ header{
     background-attachment: fixed;
 }
 
+
 .hero-text-box {
     position: absolute;
-    width: 1000px;
-    margin-top: 90px;
+    width: 90%;
+    margin: 0;
 }
+
 
 .logo{
     float: left;
-    height: 75px;
+    height: 40px;
     width: auto;
     border-radius: 50%;
-    margin: 60px 10px 0 -100px;
+    margin: 15px 10px 0 10px;
 }
+
 
 header h1 {
     width: 100%;
     clear: both;
-    margin-top: 100px;
-    font-size: 3.75em;
-    line-height: 75px;
+    margin-top: 60px;
+    font-size: 2em;
+    line-height: 50px;
     color: #1E1E20;
-    padding: 10px 25px;
+    padding: 10px 15px;
 }
+
 
 header h1 span {
-    color: #FFFFFF;
+    color: #fff;
 }
+
 
 header h2{
-    font-size: 2em;
+    font-size: .85em;
     float: left;
     color: #fff;
-    margin: 25px 5px 0 -20px;
-}
-/*--------------------
-Navigation
-----------------------*/
-.main-nav{
-    display: inline-block;
-    position: absolute;
-    right: 50px;
-    list-style: none;
-    margin-top: 45px;
-    margin-left: -70px;
+    margin: -20px 0 5px -20px;
 }
 
-.main-nav li{
-    display: inline-block;
-    margin-right: 20px;
-}
+h1{ margin-left: 15px;}
 
-.main-nav li a:link,
-.main-nav li a:visited {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active{
-    padding: 2px 0px;
-    border-bottom: 3px solid #1E1E20;
-}
 
 /*-------------------------
 Mobile Nav
 -------------------------*/
-.mobile-nav-icon{
-    float: right;
-    margin-top: 20px;
-    cursor: pointer;
-    display: none;
-}
 
 .mobile-nav-icon i{
-    font-size: 250%;
-    color: #ffffff;
+    font-size: 200%;
+    color: #fff;
 }
 
-/*-------------------------
-Section- About
--------------------------*/
+.mobile-nav-icon{
+    margin: 50px -100px 0 100px;
+}
+.main-nav{
+    display:none;
+}
 
-.section-about{
-    background-color: #ffffff;
-    padding-right: 2px;
-    height: 90vh;
+/*------------------------
+Reusable Parts
+------------------------*/
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+
+/*-------------------------
+Icons
+-------------------------*/
+i {
+    font-size: 175%;
+    color: #1E1E20;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+/*-----------------------
+About
+-----------------------*/
+
+.section-about {
+    height: 200vh;
+    margin: 20px;
+    line-height: 28px;
 }
 
 .span-1-of-2{
-    width: 47%;
+    margin: 5px;
 }
 
-.span-1-of-2:last-child{
-    padding: 6% 0 0 0;
+.bio:last-child{
+    margin-top: 10px;
 }
 
+/*-----------------------
+Work
+-----------------------*/
 
-/*-------------------------
-Section- Work
--------------------------*/
 .section-work{
+    width: 100%;
     background-color: #b28e89;
+    height: 160vh;
+    line-height: 28px;
     text-align: center;
-    height: 80vh;
+}
+.section-work p{
+    color: black;
 }
 
-.span-1-of-3{
-    width:29%;
-    padding: 0 2% 1% 2%;
-    color: #1E1E20;
+.section-work i{
+    text-align: center;
+    margin: 15px 5px;
 }
 
-.col{
-    display: block;
-    float: left;
-    margin: 1% 0 1% 1.6%;
+.span-1-of-3 p{
+    width: auto;
+    margin: 10px 5px;
+    padding: 5px;
 }
 
-/*-------------------------
-Section- Contact
--------------------------*/
+.span-1-of-3:first-child{
+    margin-top: 20px;
+}
+
+/*-----------------------
+Footer
+-----------------------*/
+
 footer{
     background-color: #e2e2e0;
-    height: 80vh;
+    height: 100vh;
+    width: auto;
+    line-height: 28px;
+    display: flex;
 }
 
 .section-contact{
-    padding: 85px 0;
+    flex: wrap;
 }
 
+.span-1-of-3{
+    text-align: center;
+}
 .contact-image{
-    height: 300px;
-    border-radius: 50%;
-    border: 8px solid #4d3f3f ;
-    margin-left: 40px;
+    height: 175px;
+    margin: 10px;
+    border-radius: 45%;
+    border: 5px solid rgba(86, 66, 66, 0.8);
 }
 
 .span-2-of-3{
-    width: 58%;
-    float: right;
-    margin-left: 15px;
-    margin-top: 50px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
-
-.span-2-of-3 a{
-    font-size: 110%;
+.socialmedia-links ul{
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
-
 .socialmedia-links ul li {
-    display: inline-block;
     list-style: none;
     margin: 0px 15px;
 }
 
 .socialmedia-links i{
-    font-size: 200%;
+    font-size: 150%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -467,431 +468,202 @@ footer{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/*  Medium Laptops to 1370px*/
 
-@media only screen and (max-width: 1369px){ 
-.logo{ margin-left: -25px;}
-.section-about{ height: 70vh;}
+   @media only screen and (min-width: 370px){
+    body, html{ font-size: 1.26em;}
+    header h1{ line-height: 60px;}
+    .mobile-nav-icon{ margin: 10px -100px 10px 100px;}
+    .hero-text-box{ margin-top: 40px;}
+    h3, h4, h5 { line-height: 50px;}
+    p { line-height: 36px;}
+    .section-about{ height: 240vh;}
+    .section-work{height: 190vh;}
+}
 
-.section-work{ height: 65vh;}
 
-footer{ height: 70vh;}
+@media only screen and (min-width: 560px) and 
+    (orientation: landscape){
+        body, html{ font-size: 1em;}
+        header{ height: 100vh;}
+        header h1{ 
+            margin-top: 15px;
+            line-height: 40px;
+        }
+        header h2{ margin-top: -30px;}
+        .mobile-nav-icon{ display:none;}
+        .main-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: auto;
+            list-style: none;
+        }
+
+        .main-nav li{
+        margin-right: 20px;
+        }
+
+        .main-nav li a:link,
+        .main-nav li a:visited {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        .main-nav li a:hover,
+        .main-nav li a:active{
+            padding: 2px 0px;
+            border-bottom: 3px solid #1E1E20;
+        }
+
+        h3, h4, h5 { line-height: 35px;}
+        p { line-height: 28px;}
+        .section-about{ height: 200vh;}
+        .section-work{ height: 200vh;}
+        footer{ height: 160vh;}
+}
+
+@media only screen and (min-width:590px) and (max-width: 970px){
+    header{ height: 100vh;}
+    .mobile-nav-icon{ display:none;}
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: auto;
+        list-style: none;
+    }
+
+    .main-nav li{
+    margin-right: 20px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active{
+        padding: 2px 0px;
+        border-bottom: 3px solid #1E1E20;
+    }
+
+    .hero-text-box{ margin-top: 95px;}
+    .section-about{ height: 130vh;}
+    .section-work{height: 160vh;}
+    footer{height: 120vh;}
+}
+
+@media only screen and (min-width: 768px){
+    body, html{font-size: 1.2em;}
+    header{ height: 70vh;}
+    header h2{ margin-top: -35px;}
+    .mobile-nav-icon{ display: none;}
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: auto;
+        list-style: none;
+    }
+
+    .main-nav li{
+    margin-right: 20px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.2s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active{
+        padding: 2px 0px;
+        border-bottom: 3px solid #1E1E20;
+    }
+    .hero-text-box{ margin-top: 95px;}
+    .section-about{height: 80vh;}
+    .section-work{ height: 80vh;}
+    footer{ height: 65vh;}
+}
+
+
+@media only screen and (min-width: 767px) and
+    (orientation: landscape){
+        body, html{ font-size: 1.2em;}
+        header{ height: 100vh;}
+        .section-about{ height: 150vh;}
+        .section-work{ height: 180vh;}
+        footer{height: 130vh;}
+}
+
+@media only screen and (min-width: 1023px){
+    body,html{ font-size: 1.4em;}
+    header h1{ line-height: 70px;}
+    .hero-text-box{margin-top: 200px;}
+    h3{ margin-bottom: 20px;}
+    p{ line-height: 45px;}
+    footer{height: 50vh;}
 
 }
 
-/* Big Tablet to 1200px*/
-@media only screen and (max-width: 1200px){
-    
-    html,
-    body{ font-size: 30px;}
-    .hero-text-box{ 
-        top: 18%;
-        width: 95%;
-        margin-left: 30px;
-        text-align: left;
-    }
-    header{ height: 85vh;}
-    header h1{
-        width: auto;
-        font-size: 3.3em;
-        line-height: 115px;
-        padding: 0;
-    }
-    
-    header h2{ 
-        width: 50%;
-        margin: 0;
-        padding: 30px 0 0 0;
-        font-size: 1.85em;
-    }
-
-    .logo{
-        height: 85px;
-        width: auto;
-        margin: 25px 0 25px 10px;
-        padding: 10px ;
-        border-radius: 200%;
-    }
-
-
-    .main-nav{ 
-        float: left;
-        margin-top: 35px;
-        margin-left: 20px;
-    }
-    .main-nav{display: none;}
-    .mobile-nav-icon{ 
-        display: inline-block; 
-        margin-right: 25px;
-        font-size: 150%;
-    }
-    .main-nav li{
-        display: block;
-    }
-    .main-nav li a:link,
-    .main-nav li a:visited{
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-
-    .col{ 
-        margin: 5px 15px 5px 0;
-        width: 100%
-    }
-
-    .section-about{ 
-        margin: 5px 10px;
-        padding: 5px 15px;
-        height: 80vh;
-    }
-    .section-work{ 
-        padding: 5px 15px;
-        height: 85vh;
-    }
+@media only screen and (min-width: 1023px) and
+    (orientation: landscape){
+    body,html{font-size: 1.3em;}
+    header{ height: 80vh;}
+    .hero-text-box{ margin-top: 100px;}
+    .section-about{ height: 100vh;}
+    .section-work{ height: 110vh;}
     footer{ height: 70vh;}
-    .contact-image{ margin: 0;}
-    .span-1-of-3{ text-align: center;}
-    .span-2-of-3{ 
-        margin: 0;
-        text-align: center;
+    .contact-image{ 
+        height: 228px;
+        width: auto;
     }
 }
 
-/* Small Tablet to Big Tablet: from 768px to 1023px*/
-@media only screen and (max-width: 1023px){
-    html, body{ font-size: 20px;}
-    header{ 
-        width: auto;
-        height: 90vh;
+@media only screen and (min-width: 1270px){
+    body, html{ font-size: 1.3em;}
+    header{ height: 100vh;}
+    .hero-text-box{ margin-top: 180px;}
+    .main-nav ul{ justify-content: flex-end;}
+    .section-about{ height: 110vh;}
+    .span-1-of-2{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
     }
 
-    .main-nav{ 
-        float: left;
-        margin-top: 35px;
-        margin-left: 20px;
-    }
-    .main-nav{display: none;}
-    .mobile-nav-icon{ 
-        display: inline-block; 
-        margin-right: 25px;
-        font-size: 150%;
-    }
-    .main-nav li{
-        display: block;
-    }
-    .main-nav li a:link,
-    .main-nav li a:visited{
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
+    .span-1-of-2 .box .about:last-child{
+        margin-top: 25px;
     }
 
-    header h1{ 
-        margin: 25px 0 0 15px;
-        width: auto;
-        line-height: 80px;
-    }
-
-    .logo{
-        height: 75px;
-        margin: 25px 0 25px 10px;
-        padding: 10px ;
-        width: auto;
-        border-radius: 200%;
-    }
-    header h2{ 
-        width: 50%;
-        margin: 0;
-        padding: 40px 0 0 0;
-        font-size: 1.85em;
-    }
-    .hero-text-box{ width: 90%; }
-    .col{ 
-        margin: 5px 15px 5px 0;
-        width: 100%
-    }
-    .section-about{ 
-        margin: 5px 10px;
-        padding: 5px 15px;
-        height: 65vh;
-    }
-    .section-work{ 
-        padding: 5px 15px;
-        height: 70vh;
-    }
-    footer{ height: 70vh;}
-    .contact-image{ margin: 0;}
-    .span-1-of-3{ text-align: center;}
-    .span-2-of-3{ 
-        margin: 0;
-        text-align: center;
-    }
+    .section-work{ height: 115vh;}
+    footer{ height: 90vh;}
 }
 
-/* Medium Phones to Small Tablet 481px to 767px*/
-@media only screen and (max-width: 767px){
-
-    .main-nav{ 
-        float: left;
-        margin-top: 35px;
-        margin-left: 20px;
-    }
-    .main-nav{display: none;}
-    .mobile-nav-icon{ 
-        position: relative;
-        padding-right: 10px;
-        display: inline-block;
-    }
-    .main-nav li{
-        display: block;
-    }
-    .main-nav li a:link,
-    .main-nav li a:visited{
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-
-    header h2{
-        font-size: 1.75em;
-        width: auto;;
-        margin-top: -15px;
-    }
-    .logo{ 
-        float: left;
-        height: 50px;
-        width: auto;
-    }
-    
-    header{ width: auto;}
-
-    .col{ width: 100%}
-
-    .hero-text-box{
-        width: auto;
-        padding: 0 2%;
-    }
-
-    header h1{ line-height: 80px;}
-
-    .section-about{ 
-        height: 80vh;
-        padding: 5px 10px;
-    }
-
-    .section-work{ 
-        height: 80vh;
-        padding: 5px 10px;
-    }
-    .section-contact{ padding: 20px 15px;}
-    footer{ 
-        height: 70vh;
-        padding: 10px 10px;
-    }
-
-    .row{ padding: 0 2%;}
-
-    html, body{ font-size: 18px;}
-    .span-1-of-3{ 
-        width:100%;
-        text-align: center;
-        margin: 15px 0;
-    }
-
-    .contact-image{ margin:0;}
-    .span-1-of-2:last-child{ padding-top: 7%;}
-    .span-2-of-3{
-        width: 100%;
-        margin: 15px 0;
-        text-align: center;
-    }
-    h5{ font-size: 140%;}
-
+@media only screen and (min-width: 1430px){
+    body, html{ font-size: 1.5em;}
+    .main-nav{ font-size: .75em;}
+    .hero-text-box { margin-top: 210px;}
+    p{ line-height: 55px;}
+    h3, h4, h5{ line-height: 50px;}
 }
-
-/* Small Phones from 331 to 480px*/
-@media only screen and (max-width: 480px){
-
-    .main-nav{ 
-        float: left;
-    }
-    .main-nav{ display:none;}
-
-    .mobile-nav-icon{ 
-        display: inline-block;
-        font-size: 110%;
-        right: -25px;
-    }
-    .main-nav li{
-        display: block;
-    }
-    .main-nav li a:link,
-    .main-nav li a:visited{
-        display: block;
-        border: 0;
-        margin: 10px 5px;
-        padding: 5px 0;
-        font-size: 100%;
-    }
-    .hero-text-box{ 
-        font-size: .90em;
-        width: auto;
-        margin: 20px;
-    }
-
-    .col{ width: 100%;}
-
-    header h2{ 
-        margin-top: -5px;
-        padding: 30px 0 15px 0;
-        font-size: 1.35em;
-    }
-    .logo{ 
-        height: 50px;
-        margin: 15px 0;
-    }
-    header h1{ 
-        width: auto;
-        line-height: 1.2;
-        font-size: 2.75em;
-    }
-
-    .section-about{ 
-        height: 110vh;
-        line-height: 30px;
-    }
-    .section-work{ 
-        height: 100vh;
-        line-height: 28px;
-    }
-    footer { 
-        height: 90vh;
-        line-height: 32px;
-    }
-    .contact-image{ height: 200px;}
-
-    .span-1-of-3{ width: 100%;}
-
-    .span-2-of-3{ width: 100%;}
-
-    h4{
-        font-size: 1.75em;
-    }
-
-    h5{
-        font-size: 1.45em;
-    }
-}
-
-/* medium-small phones from 378px to 415px */
-@media only screen and (max-width: 415px){
-    body, html{ font-size: 18px;}
-
-    .js--main-nav li {
-        position: relative;
-         margin: 5px 0;
-         z-index: 1;
-    }
-    .hero-text-box{ 
-        margin: 20px;
-        z-index: 0;
-    }
-
-    .section-about{ 
-        margin-top: 30px;
-        height: 135vh;
-    }
-
-    .section-work{ 
-        margin-top: 20px;
-        height: 115vh;}
-
-    
-    footer{ height: 85vh;}
-}
-
-/* devices from 376px to 385px*/
-@media only screen and (max-width: 385px){
-    .section-about{ height: 170vh;}
-    .section-work{ height: 135vh;}
-    footer{ height: 100vh;}
-
-}
-
-
-/*small to medium-small phones from 362px to 376px*/
-@media only screen and (max-width: 376px){
-    
-    .js--main-nav li{ 
-        position: relative;
-        margin-top: -5px;
-        padding: 0;
-        z-index: 1;
-    }
-    .hero-text-box{ 
-        margin: 0 10px;
-        padding: 0; 
-        z-index: 0;
-    }
-
-    .section-about{ 
-        margin-top: 30px;
-        height: 165vh;
-    }
-    .section-work { 
-        margin-top: 20px;
-        height: 135vh;
-    }
-    footer{ height: 95vh; }
-
-}
-
-/*small phones from size 331px to 361px*/
- @media only screen and (max-width: 361px){
-     body, html{ font-size: 16px;}
-
-     .section-about{ height: 160vh;}
-
-     .section-work { height: 130vh;}
-
-     footer{ height: 90vh;}
- }
-
-/* Very small phones 0 to 330px*/
-@media only screen and (max-width: 330px){
-    html, body{ font-size: 16px;}
-    
-    .hero-text-box{ 
-        font-size: .85em;
-        width: 100%;
-        margin: 0 15px 0 0;
-    }
-    h1{ margin-left: -15px;}
-
-    .mobile-nav-icon{ font-size: 100%}
-    
-    .section-about {
-        height: 190vh;
-        line-height: 28px;
-    }
-
-    .section-work{
-        height: 160vh;
-        line-height: 28px;
-    }
-
-    footer{
-        height: 100vh;
-        width: auto;
-        line-height: 28px;
-    }
-    h4{ font-size: 1.5em; }
-    h5{ font-size: 1.25em;}
-}
+        
 
 
 @media print,
