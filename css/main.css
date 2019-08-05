@@ -657,11 +657,12 @@ footer{
 }
 
 @media only screen and (min-width: 1430px){
-    body, html{ font-size: 1.5em;}
+    body, html{ font-size: 1.3em;}
     .main-nav{ font-size: .75em;}
     .hero-text-box { margin-top: 210px;}
-    p{ line-height: 55px;}
+    p{ font-size: .85em;}
     h3, h4, h5{ line-height: 50px;}
+    .section-work{ height:140vh;}
 }
         
 
