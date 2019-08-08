@@ -100,6 +100,7 @@ textarea {
 /*-------------------------
 Basic Setup
 -------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +115,6 @@ body{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
 }
 
 /*-------------------------
@@ -208,7 +208,6 @@ header{
 
 header h1 {
     width: 100%;
-    clear: both;
     margin-top: 60px;
     font-size: 2em;
     line-height: 50px;
@@ -235,17 +234,36 @@ h1{ margin-left: 15px;}
 /*-------------------------
 Mobile Nav
 -------------------------*/
-
+.nav{ display: flex;}
+.main-nav{ 
+    margin: 40px 5px;
+    float: right;
+    list-style: none;
+    display: none;
+    font-size: .95em;
+    
+}
+.mobile-nav-icon{
+    margin: 50px -100px 0 100px;
+}
 .mobile-nav-icon i{
     font-size: 200%;
     color: #fff;
 }
 
-.mobile-nav-icon{
-    margin: 50px -100px 0 100px;
+.js--main-nav li {
+    position: relative;
+    display: initial;
 }
-.main-nav{
-    display:none;
+
+.js--main-nav li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.js--main-nav ul li{
+    list-style: none;
 }
 
 /*------------------------
@@ -366,22 +384,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -472,14 +474,13 @@ footer{
    @media only screen and (min-width: 370px){
     body, html{ font-size: 1.26em;}
     header h1{ line-height: 60px;}
-    .mobile-nav-icon{ margin: 10px -100px 10px 100px;}
+    .mobile-nav-icon{ margin: 50px -100px 0 100px;}
     .hero-text-box{ margin-top: 40px;}
     h3, h4, h5 { line-height: 50px;}
     p { line-height: 36px;}
-    .section-about{ height: 240vh;}
+    .section-about{ height: 250vh;}
     .section-work{height: 190vh;}
 }
-
 
 @media only screen and (min-width: 560px) and 
     (orientation: landscape){
@@ -644,7 +645,7 @@ footer{
     .span-1-of-2{ 
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-content: center;
     }
 
