@@ -164,6 +164,7 @@ p{
     font-size: .85em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    margin: 8px 0;
 }
 
 /*-------------------------
@@ -234,15 +235,14 @@ h1{ margin-left: 15px;}
 /*-------------------------
 Mobile Nav
 -------------------------*/
-.nav{ display: flex;}
 .main-nav{ 
     margin: 40px 5px;
     float: right;
     list-style: none;
     display: none;
     font-size: .95em;
-    
 }
+
 .mobile-nav-icon{
     margin: 50px -100px 0 100px;
 }
@@ -295,12 +295,14 @@ About
 -----------------------*/
 
 .section-about {
+    display: flex;
     height: 200vh;
     margin: 20px;
     line-height: 28px;
 }
 
 .span-1-of-2{
+    flex-direction: column;
     margin: 5px;
 }
 
@@ -567,7 +569,7 @@ footer{
 @media only screen and (min-width: 768px){
     body, html{font-size: 1.2em;}
     header{ height: 70vh;}
-    header h2{ margin-top: -35px;}
+    header h2{ margin-top: -30px;}
     .mobile-nav-icon{ display: none;}
     .main-nav{
         display: flex;
